@@ -37,12 +37,13 @@ export default function CodeiumTodos({}: {}) {
   };
 
   return (
-    <div>
-      <h1>Codeium Todos</h1>
+    <div className="max-w-md mx-auto p-4">
+      <h1 className="text-2xl font-bold">Codeium Todos</h1>
       {/* Add todos */}
       <input
         type="text"
         placeholder="Add Todo"
+        className="border p-2 w-full"
         onKeyDown={(e) => {
           if (e.key === "Enter") {
             addTodo(e.currentTarget.value);
@@ -51,16 +52,26 @@ export default function CodeiumTodos({}: {}) {
         }}
       />
       {/* List todos */}
-      <ul>
+      <ul className="mt-4">
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <li key={todo.id} className="flex items-center">
             <input
               type="checkbox"
               checked={todo.completed}
               onChange={() => toggleTodo(todo.id)}
+              className="mr-2"
             />
-            {todo.text}
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+            <span
+              className={todo.completed ? "line-through text-gray-500" : ""}
+            >
+              {todo.text}
+            </span>
+            <button
+              className="ml-auto text-red-500 hover:text-red-700"
+              onClick={() => deleteTodo(todo.id)}
+            >
+              Delete
+            </button>
           </li>
         ))}
       </ul>

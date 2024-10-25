@@ -8,6 +8,9 @@ export default function Root() {
     { name: "Codeium", href: "/Codeium" },
     { name: "ReplitGhostwriter", href: "/ReplitGhostwriter" },
     { name: "Tabnine", href: "/Tabnine" },
+    { name: "ChatGPT", href: "/ChatGPT" },
+    { name: "Copilot", href: "/Copilot" },
+    { name: "Gemini", href: "/Gemini" },
   ];
 
   const filteredLinks = links.filter((link) =>

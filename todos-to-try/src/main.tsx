@@ -9,6 +9,9 @@ import Codeium from "./CodeGenerationAIs/Codeium/CodeiumTodos";
 import GithubCopilot from "./CodeGenerationAIs/GithubCopilot/GithubCopilotTodos";
 import ReplitGhostwriter from "./CodeGenerationAIs/ReplitGhostwriter/ReplitGhostwriterTodos";
 import Tabnine from "./CodeGenerationAIs/Tabnine/TabnineTodos";
+import ChatGPTTodos from "./ConversationalAIs/ChatGPT-4o/App";
+import CopilotTodos from "./ConversationalAIs/Copilot/App";
+import GeminiTodos from "./ConversationalAIs/Gemini/App";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +33,18 @@ const router = createBrowserRouter([
   {
     path: "/Tabnine",
     element: <Tabnine />,
+  },
+  {
+    path: "/ChatGPT",
+    element: <ChatGPTTodos />,
+  },
+  {
+    path: "/Copilot",
+    element: <CopilotTodos />,
+  },
+  {
+    path: "/Gemini",
+    element: <GeminiTodos />,
   },
 ]);
 
