@@ -8,8 +8,12 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+        <a
+          href="https://vitejs.dev"
+          target="_blank"
+          className="flex justify-center items-center"
+        >
+          <img src={viteLogo} className="logo w-16 h-16" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />

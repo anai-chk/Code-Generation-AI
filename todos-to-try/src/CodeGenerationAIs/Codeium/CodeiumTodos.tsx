@@ -6,7 +6,7 @@ type Todo = {
   completed: boolean;
 };
 
-// initial todos sample
+// Todosの初期値
 const initialTodos: Todo[] = [
   { id: 1, text: "Todo 1", completed: false },
   { id: 2, text: "Todo 2", completed: true },
