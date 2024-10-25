@@ -6,11 +6,11 @@ export default function Root() {
   const links = [
     { name: "GithubCopilot", href: "/GithubCopilot" },
     { name: "Codeium", href: "/Codeium" },
-    { name: "ReplitGhostwriter", href: "/ReplitGhostwriter" },
     { name: "Tabnine", href: "/Tabnine" },
     { name: "ChatGPT", href: "/ChatGPT" },
     { name: "Copilot", href: "/Copilot" },
     { name: "Gemini", href: "/Gemini" },
+    { name: "Claude", href: "/Claude" },
   ];
 
   const filteredLinks = links.filter((link) =>

@@ -11,7 +11,7 @@ interface TodoItem {
   completed: boolean;
 }
 
-const TodoApp: React.FC = () => {
+const ClaudeTodos: React.FC = () => {
   // 状態管理
   const [todos, setTodos] = useState<TodoItem[]>([]);
   const [newTodo, setNewTodo] = useState<string>("");
@@ -103,4 +103,4 @@ const TodoApp: React.FC = () => {
   );
 };
 
-export default TodoApp;
+export default ClaudeTodos;

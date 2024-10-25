@@ -4,14 +4,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 /* existing imports */
-import Root from "./routes/root";
 import Codeium from "./CodeGenerationAIs/Codeium/CodeiumTodos";
 import GithubCopilot from "./CodeGenerationAIs/GithubCopilot/GithubCopilotTodos";
-import ReplitGhostwriter from "./CodeGenerationAIs/ReplitGhostwriter/ReplitGhostwriterTodos";
 import Tabnine from "./CodeGenerationAIs/Tabnine/TabnineTodos";
 import ChatGPTTodos from "./ConversationalAIs/ChatGPT-4o/App";
+import ClaudeTodos from "./ConversationalAIs/Claude/TodoApplication";
 import CopilotTodos from "./ConversationalAIs/Copilot/App";
 import GeminiTodos from "./ConversationalAIs/Gemini/App";
+import Root from "./routes/root";
 
 const router = createBrowserRouter([
   {
@@ -25,10 +25,6 @@ const router = createBrowserRouter([
   {
     path: "/Codeium",
     element: <Codeium />,
-  },
-  {
-    path: "/ReplitGhostwriter",
-    element: <ReplitGhostwriter />,
   },
   {
     path: "/Tabnine",
@@ -45,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/Gemini",
     element: <GeminiTodos />,
+  },
+  {
+    path: "/Claude",
+    element: <ClaudeTodos />,
   },
 ]);
 
